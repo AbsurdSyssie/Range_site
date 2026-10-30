@@ -53,8 +53,13 @@ const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
 const href = evidence.url.replaceAll("&", "&amp;");
 for (const f of ["index.html", "appointments/index.html", "contact/index.html"])
   assert.ok(read(f).includes(`href="${href}"`), f);
-assert.match(read("appointments/index.html"), /24 hours a day, 7 days a week/);
-assert.match(read("appointments/index.html"), /2 weeks in advance/);
+for (const file of ["index.html", "appointments/index.html"]) {
+  const html = read(file);
+  assert.match(html, /phone reception/);
+  assert.match(html, /0161.*870.*8099/);
+  assert.match(html, /If it is unavailable, phone reception/);
+  assert.doesNotMatch(html, /24 hours a day|7 days a week|urgent appointments/);
+}
 assert.match(read("appointments/index.html"), /4pm to 7:50pm/);
 assert.match(read("prescriptions/index.html"), /2 working days/);
 assert.match(read("prescriptions/index.html"), /only if you are over 75/);

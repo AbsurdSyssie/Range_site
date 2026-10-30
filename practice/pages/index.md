@@ -8,9 +8,9 @@ title: The Range Medical Centre
 
 <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent"><div class="nhsuk-card__content">
 <h2 class="nhsuk-card__heading">Book an appointment</h2>
-<p>Use GP Triage to choose an appointment time and clinician. Online booking is available 24 hours a day, 7 days a week.</p>
+<p>For appointments, phone reception on <a href="tel:01618708099">0161&nbsp;870&nbsp;8099</a> during surgery opening times. You can also try GP Triage. If it is unavailable, phone reception.</p>
 <p><a class="nhsuk-button" href="https://gptriage-prod.azurewebsites.net/?ods_code=P84039&amp;website_address=https://www.therangemedicalcenter.uk">Book with GP Triage</a></p>
-<p>You can also book through the NHS App, call <a href="tel:01618708099">0161&nbsp;870&nbsp;8099</a> or speak to reception in person. <a href="/appointments/">More about appointments</a>.</p>
+<p>You can also use the NHS App or speak to reception in person. <a href="/appointments/">More about appointments</a>.</p>
 <p><strong>Do not use online booking for emergencies.</strong> Call 999 in a life-threatening emergency.</p>
 </div></div>
 
