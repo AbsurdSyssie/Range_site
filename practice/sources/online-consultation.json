@@ -1,0 +1,14 @@
+{
+  "provider": "GP Triage",
+  "ods": "P84039",
+  "url": "https://gptriage-prod.azurewebsites.net/?ods_code=P84039&website_address=https://www.therangemedicalcenter.uk",
+  "source": "https://therangemedicalcentre.co.uk/appointments/",
+  "capture": "20251211212327",
+  "corroboratedBy": "https://web.archive.org/web/20260714101835id_/https://therangemedicalcentre.co.uk/",
+  "checked": "2026-10-30",
+  "landing": "GP Triage, Welcome to GP Triage. No practice name displayed on initial landing. Source href targets P84039. No conversation started and no data submitted.",
+  "registrationUrl": "https://register-with-gp.ht1.uk/?gpCode=P84039&gpName=The%20Range%20Medical%20Centre",
+  "registrationSource": "https://web.archive.org/web/20260422234300id_/https://therangemedicalcentre.co.uk/services/new-patients/",
+  "registrationLanding": "https://gp-registration.nhs.uk/P84039/gpregistration/landing",
+  "registrationHeading": "Register with a GP surgery: The Range Medical Centre, Manchester"
+}

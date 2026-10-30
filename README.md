@@ -1,3 +1,7 @@
+# Personal unofficial Range demo
+
+See [DEMO.md](DEMO.md) for the hosting record, source research, safety boundaries and manual update commands. This copy is not practice-approved. It is manually deployed to Cloudflare Pages, not GitHub Pages. The original upstream template documentation follows.
+
 # Open GP Practice Website
 
 A free, open source website template that lets a GP practice put a safe, NHS-style website online in an afternoon, with an AI assistant doing the technical work.

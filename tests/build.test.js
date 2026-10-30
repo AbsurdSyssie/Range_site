@@ -45,7 +45,7 @@ before(async () => {
   const warn = console.warn;
   console.warn = () => {};
   try {
-    site = await build("practice", "site");
+    site = await build(process.env.PRACTICE_DIR ?? "practice", "site");
     demo = await build("tests/fixtures/demo-practice", "demo");
     wales = await build("tests/fixtures/wales-practice", "wales");
   } finally {

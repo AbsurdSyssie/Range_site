@@ -21,6 +21,17 @@ Ratings use the DCB0129 risk matrix: severity (1 minor to 5 catastrophic) and li
 
 ## Open actions
 
+## Personal preview controls (2026-10-30)
+
+This copy is a personal, unofficial demonstration, not an authorised practice launch. The production validator is unchanged. `build:demo` uses the isolated `_preview` output, deletes stale preview output before a rebuild, suppresses the entire unknown-financial-year earnings block before validating and normalising the remaining data, and defers only the resulting missing earnings block and missing content review date. Invalid known-year earnings and all other validation errors still block. The source cohorts are preserved in practice data without inventing a year.
+
+- H1/H5: unchanged urgent-help partial on every page; the appointment journey retains emergency signposting. Preview overrides cannot replace urgent-help or the layout.
+- H2/H3/H7: source-specific preview pages replace generic service promises; conflicting hours and missing approval are documented only in non-rendered migration records. No false review date or earnings year is shown.
+- H6/H10: personal manual hosting, not a practice-owned official service. One compact global banner, noindex metadata and response headers, disallow-all robots file, no forms, embeds or copied supplier scripts. `no-transform` prevents host HTML modifications.
+- Verification: `tests/preview.test.js` uses fictional data, proves failure isolation, retained strict validation and unchanged urgent links. `audit:demo` checks every actual demo page and source-specific patient journeys. The production build remains blocked until required facts and practice approval exist.
+
+## Open actions (continued)
+
 - Re-review ratings when the template changes in a way that affects a hazard or control.
 - Add automated accessibility testing (for example axe) to CI.
 - Consider a Content Security Policy generated from the trusted embed domains.
