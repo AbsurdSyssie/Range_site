@@ -21,7 +21,9 @@ Personal owner: AbsurdSyssie. This is not a practice-owned account.
 - Pages hostname: `range-site-5pt.pages.dev` (Cloudflare allocated a suffix).
 - Custom domain was attached through the Pages API on 30 October 2026. DNS record access returned HTTP 403/code 10000 with the existing personal OAuth login, so **no DNS records were changed**. Initial domain verification was pending.
 - Manual DNS action: in the `oddtv.uk` zone, first inspect and preserve any existing exact-host record, then set only **CNAME `range` → `range-site-5pt.pages.dev`**. Preserve apex, wildcard, mail and all other demo records. Cloudflare proxying can be enabled. Verify HTTPS and the correct Range body after validation; attaching a domain is not proof that it is live.
-- Immutable deployment URL and live body verification will be recorded after upload.
+- First immutable deployment: `https://1bde4d38.range-site-5pt.pages.dev/`.
+- Live demo: **https://range-site-5pt.pages.dev/**. Verified HTTPS 200 and all 19 HTML responses byte-identical to the tested `_preview`; immutable home also byte-identical. Response headers include `X-Robots-Tag: noindex, nofollow` and `Cache-Control: public, max-age=0, must-revalidate, no-transform`.
+- `https://range.oddtv.uk/` is **not live**: checked response was Cloudflare HTTP 525, not the Range demo body. Pages API reports pending verification, **“CNAME record not set”**. Do not share it as a working demo until the exact DNS action above is complete and the correct body is verified over HTTPS.
 
 No GitHub Pages launch or Cloudflare GitHub integration is configured. A source push does **not** deploy this demo. Inherited production workflows may fail the missing required facts by design.
 
